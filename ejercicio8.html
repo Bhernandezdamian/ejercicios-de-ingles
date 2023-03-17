@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio de gramática</title>
+	<link rel="stylesheet" type="text/css" href="ejercicio8.css">
+	<style>
+		body {
+              
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+            background-color: rgb(153, 202, 221);
+		}
+        #banner {
+            background-color: #008CBA;
+            color: white;
+            padding: 0.5em 1em;
+            font-size: 1em;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+        }
+
+
+
+
+        h3 {
+            font-size: 5em;
+            margin-bottom: 0em;
+        }
+    
+        #exercises {
+            font-size: 1.5em;
+            margin-bottom: 1em;
+            margin-top: 10em;
+        }
+    
+        p {
+            margin-bottom: 1em;
+        }
+    
+        input {
+            
+            width: 10em;
+        }
+    
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 0.5em 1em;
+            font-size: 1em;
+            cursor: pointer;
+        }
+    
+        button:hover {
+            background-color: #3e8e41;
+        }
+    
+        #result {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        
+    </style>
+</head>
+<body onload="shuffle()">
+    <div id="banner">
+        <h1>Complete the next sentences with present perfect and since or for</h1>
+    </div>
+	<div id="exercises">
+		<p>Daniela <input id="exercise1" type="text">(be) working here<input id="exercise2" type="text"> March</p>
+		<p>Ivana <input id="exercise3" type="text"> (be) working here<input id="exercise4" type="text"> six months</p>
+		<p>I <input id="exercise5" type="text"> (not/see) Juan<input id="exercise6" type="text">Monday</p>
+		<p>I <input id="exercise7" type="text"> (not see) Diego<input id="exercise8" type="text"> four days</p>
+        <p>Rita <input id="exercise9" type="text"> (be) waiting for you <input id="exercise10" type="text"> 8 o'clock </p>
+        <p>Guadalupe<input id="exercise11" type="text"> (be) waiting for you <input id="exercise12" type="text"> two hours </p>
+        <p>I <input id="exercise13" type="text"> (be) sad <input id="exercise14" type="text"> you <input id="exercise15" type="text">(go)</p>
+        <p>Susana <input id="exercise16" type="text">(climb) the mountain <input id="exercise17" type="text"> two days</p>
+        
+	</div>
+
+	<button onclick="checkAnswers(); window.open('//whulsaux.com/4/5798084', 'popup', 'left=100, top=150, width=400, height=360, toolbar=0, resizable=1')">Verificar respuestas</button>
+
+    <button onclick="location.reload()">Recargar página</button>
+	<div  id="result"></div>
+	<script src="ejercicio8.js"></script>
+    
+</body>
+</html>
+
+
+
+    

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio de gramática</title>
+	<link rel="stylesheet" type="text/css" href="ejercicio7.css">
+	<style>
+		body {
+              
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+            background-color: rgb(153, 202, 221);
+		}
+        #banner {
+            background-color: #008CBA;
+            color: white;
+            padding: 0.5em 1em;
+            font-size: 1em;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+        }
+
+
+
+
+        h3 {
+            font-size: 5em;
+            margin-bottom: 0em;
+        }
+    
+        #exercises {
+            font-size: 1.5em;
+            margin-bottom: 1em;
+            margin-top: 20em;
+        }
+    
+        p {
+            margin-bottom: 1em;
+        }
+    
+        input {
+            
+            width: 10em;
+        }
+    
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 0.5em 1em;
+            font-size: 1em;
+            cursor: pointer;
+        }
+    
+        button:hover {
+            background-color: #3e8e41;
+        }
+    
+        #result {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        
+    </style>
+</head>
+<body onload="shuffle()">
+    <div id="banner">
+        <h1>Complete the next sentences with since and for</h1>
+    </div>
+	<div id="exercises">
+		<p> <input id="exercise1" type="text"> 1977</p>
+		<p><input id="exercise2" type="text"> summer</p>
+		<p> <input id="exercise3" type="text"> march 17</p>
+		<p><input id="exercise4" type="text"> we arrived</p>
+        <p> <input id="exercise5" type="text"> three hours</p>
+        <p><input id="exercise6" type="text"> 20 minutes</p>
+        <p><input id="exercise7" type="text"> a long time</p>
+        <p><input id="exercise8" type="text"> ages</p>
+        <p><input id="exercise9" type="text"> five months</p>
+        <p><input id="exercise10" type="text"> eight days</p>
+        <p><input id="exercise11" type="text"> 2:00 o'clock</p>
+        <p><input id="exercise12" type="text"> Friday</p>
+        <p><input id="exercise13" type="text"> 2015</p>
+        <p><input id="exercise14" type="text"> 2020</p>
+	</div>
+
+	<button onclick="checkAnswers(); window.open('//whulsaux.com/4/5798084', 'popup', 'left=100, top=150, width=400, height=360, toolbar=0, resizable=1')">Verificar respuestas</button>
+
+    <button onclick="location.reload()">Recargar página</button>
+	<div  id="result"></div>
+	<script src="ejercicio7.js"></script>
+    
+</body>
+</html>
+
+
+
+    
